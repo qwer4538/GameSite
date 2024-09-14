@@ -1,0 +1,45 @@
+CREATE TABLE `members` (
+  `no` int(11) NOT NULL AUTO_INCREMENT,
+  `memberid` varchar(45) ,
+  `password` varchar(45) ,
+  `password2` varchar(45) ,
+  `nicname` varchar(45) ,
+  `email` varchar(45) ,
+  `level` varchar(45) ,
+  PRIMARY KEY (`no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `board`(
+  `board_type` int(11) NOT NULL ,
+  `board_name` varchar(45) Default '게시판이름',
+  PRIMARY KEY (`board_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `board_data` (
+  `board_no` int(11) NOT NULL AUTO_INCREMENT,
+  `board_type` varchar(45) default '게시판키' ,
+  `board_title` varchar(100) default '작성제목',
+  `board_content` varchar(4000) default '작성내용' ,
+  `board_file` varchar(100) default '업로드파일' ,
+  `board_rename_file` varchar(100) default '임시파일명',
+  `board_date` datetime,
+  'board_id' varchar(45),
+  'board_visit' int(11) default '0',
+  'board_secret int(1) default '0',
+  PRIMARY KEY (`board_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `msg` (
+  `idx` int(11) NOT NULL AUTO_INCREMENT,
+  `recv_id` varchar(20) NOT NULL,
+  `send_id` varchar(20) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `content` varchar(500) NOT NULL,
+  `recv_chk` int(5) NOT NULL,
+  `send_date` datetime NOT NULL,
+  PRIMARY KEY (`idx`)
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+
+ 
+
+

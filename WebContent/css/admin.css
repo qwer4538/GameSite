@@ -1,0 +1,38 @@
+@charset "UTF-8";
+      #gamesite {
+        width: 978px;
+        margin: 0px auto;
+        padding: 20px;
+        font-family:"맑은 고딕", "돋움";
+      }
+        
+      #header {         
+        padding: 20px;
+      }
+
+      #menu {          /*"관리자 페이지"*/
+        width: 930px;
+        padding: 5px;
+        font-size: 30px;
+        text-align: center;
+      }
+      
+
+      #pre {           /*게임게시판*/
+        width: 900px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      a{
+        color: #000000;
+        text-decoration: none;
+      }
+      
+      p{
+        text-align: center;
+      }
+      
+      span{
+      	font-size: 20px;
+      }
